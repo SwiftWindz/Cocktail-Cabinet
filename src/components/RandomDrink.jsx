@@ -32,7 +32,7 @@ export default function RandomDrink() {
   }, []);
 
   return (
-    <div className="text-black w-screen h-screen bg-white font-outfit">
+    <div className="text-black w-screen h-full bg-white font-outfit">
         <div className=' p-8'>
             <h2 className='text-5xl text-center pt-8 font-bold '>{randomDrink.strDrink}</h2>
             <div className=" grid grid-cols-1 lg:grid-cols-2 p-8 border-t-2">
