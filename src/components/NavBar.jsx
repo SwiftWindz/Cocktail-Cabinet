@@ -25,12 +25,12 @@ export default function NavBar() {
             </div>
             <div className='hidden md:flex text-xs lg:text-lg md:flex-row-reverse gap-4 '>
                 <ul className='inline-flex gap-4 place-content-center place-self-center'>
-                    <li><a href="/#/">Home</a></li>
-                    <li><a href="/#/random">Random Drink</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/random">Random Drink</Link></li>
                 </ul>
                 <div className='inline-flex flex-row-reverse'>
-                    <a href={`/#/search/${search}`}><BiSearchAlt className='text-3xl text-violet-400 bg-white '/></a>
-                    <input type="text" placeholder='Find a drink...' className=' text-black' onChange={(event) => {setSearch(event.target.value)}}  />
+                    <Link to={`/search/${search}`}><BiSearchAlt className='text-3xl rounded-r-lg text-violet-400 bg-white '/></Link>
+                    <input type="text" placeholder='Find a drink...' className=' text-black rounded-l-lg' onChange={(event) => {setSearch(event.target.value)}}  />
                 </div>
             </div>
             <div className='inline-flex flex-row-reverse md:hidden'>
@@ -45,8 +45,8 @@ export default function NavBar() {
                 <ul className=" pt-40 flex flex-col gap-8 justify-center place-content-center">
                     <li className='text-center text-5xl'>Drink Hub</li>
                     <div className='inline-flex flex-row-reverse justify-center'>
-                        <a href={`/#/search/${search}`} onClick={handleClick}><BiSearchAlt className='text-3xl text-violet-400 bg-white '/></a>
-                        <input type="text" placeholder='Find a drink...' className=' text-black' onChange={(event) => {setSearch(event.target.value)}}  />
+                        <Link to={`search/${search}`} onClick={handleClick}><BiSearchAlt className='text-3xl text-violet-400 bg-white rounded-r-lg'/></Link>
+                        <input type="text" placeholder='Find a drink...' className=' text-black rounded-l-lg' onChange={(event) => {setSearch(event.target.value)}}  />
                     </div>
                     <button onClick={handleClick}><li className="hover:text-violet-300 text-2xl"><Link to="/">Home</Link></li></button>
                     <button onClick={handleClick}><li className="hover:text-violet-300 text-2xl"><Link to="/random">Random Drink</Link></li></button>
