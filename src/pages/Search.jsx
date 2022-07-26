@@ -15,22 +15,23 @@ export default function Search() {
     }, []);
 
     return (
-        <div className='h-full w-screen p-8'>
+        <div className='max-h-full min-h-screen flex-wrap w-screen p-16 font-outfit pb-20'>
+            <h1 className='text-2xl font-bold pb-8 '>Search results for "{name}"</h1>
             <div className=' grid grid-cols-1 gap-4 lg:grid-cols-3'>
-            {drinks.map((drink, index) => {
-            return <div key={index} class="flex justify-center">
-                        <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
-                            <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src={drink.strDrinkThumb} alt={drink.strDrinkThumb} />
-                        <div class="p-6 flex flex-col justify-start">
-                            <h5 class="text-gray-900 text-xl font-medium mb-2">{drink.strDrink}</h5>
-                            <p class="text-gray-700 text-base mb-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis neque quae sequi vero quod rerum officiis nemo laboriosam odio explicabo magnam ratione consequuntur a at cumque minus, voluptatibus in eius.
-                            </p>
-                            <p class="text-gray-600 text-xs">{drink.strAlcoholic}</p>
+                {drinks.map((drink, index) => {
+                return <div key={index} className="flex max-h-[350px] md:max-h-[300px] lg:max-h-[300px]">
+                            <div className="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
+                                <img className=" w-14 h-96 md:h-auto object-cover md:w-48  md:rounded-none md:rounded-l-lg" src={drink.strDrinkThumb} alt={drink.strDrinkThumb} />
+                            <div className="p-6 flex flex-col justify-start">
+                                <h5 className="text-gray-900 text-xl font-medium mb-2">{drink.strDrink}</h5>
+                                <p className="text-gray-700 text-base mb-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis neque quae sequi vero quod rerum officiis nemo laboriosam odio explicabo magnam ratione consequuntur a at cumque minus, voluptatibus in eius.
+                                </p>
+                                <p className="text-gray-600 text-xs">{drink.strAlcoholic}</p>
+                            </div>
+                            </div>
                         </div>
-                        </div>
-                    </div>
-            })}
+                })}
             </div>
         </div>
     )
