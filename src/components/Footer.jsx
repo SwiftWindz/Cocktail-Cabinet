@@ -17,7 +17,7 @@ export default function Footer() {
             <div>
             <div className='flex justify-between sm:w-[300px] pt-2 text-2xl'>
                 <a className="hover:text-indigo-200" href="https://github.com/SwiftWindz"><FaGithub /></a>
-                <a className="hover:text-indigo-200" href="https://github.com/SwiftWindz/personal-page"><FaCode /></a>
+                <a className="hover:text-indigo-200" href="https://github.com/SwiftWindz/Drink-Hub"><FaCode /></a>
             </div>
             </div>
         </div>

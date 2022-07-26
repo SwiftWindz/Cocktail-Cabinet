@@ -28,7 +28,7 @@ export default function NavBar() {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/random">Random Drink</Link></li>
                 </ul>
-                <div className='inline-flex flex-row-reverse'>
+                <div className='inline-flex flex-row-reverse bg-white'>
                     <Link to={`/search/${search}`}><BiSearchAlt className='text-3xl rounded-r-lg text-violet-400 bg-white '/></Link>
                     <input type="text" placeholder='Find a drink...' className=' text-black rounded-l-lg' onChange={(event) => {setSearch(event.target.value)}}  />
                 </div>
@@ -46,7 +46,7 @@ export default function NavBar() {
                     <li className='text-center text-5xl'>Drink Hub</li>
                     <div className='inline-flex flex-row-reverse justify-center'>
                         <Link to={`search/${search}`} onClick={handleClick}><BiSearchAlt className='text-3xl text-violet-400 bg-white rounded-r-lg'/></Link>
-                        <input type="text" placeholder='Find a drink...' className=' text-black rounded-l-lg' onChange={(event) => {setSearch(event.target.value)}}  />
+                        <input type="text" placeholder='Find a drink...' className=' text-black rounded-l-lg bg-white' onChange={(event) => {setSearch(event.target.value)}}  />
                     </div>
                     <button onClick={handleClick}><li className="hover:text-violet-300 text-2xl"><Link to="/">Home</Link></li></button>
                     <button onClick={handleClick}><li className="hover:text-violet-300 text-2xl"><Link to="/random">Random Drink</Link></li></button>
