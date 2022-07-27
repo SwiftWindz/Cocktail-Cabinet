@@ -21,7 +21,7 @@ export default function NavBar() {
         <div className={!nav ? 'h-full grid grid-cols-2 w-screen items-center p-4 text-white bg-violet-400 font-outfit' : "hidden md:grid h-full grid-cols-2 w-screen items-center p-4 text-white bg-violet-400 font-outfit"}>
             <div className='flex'>
                 <BiDrink className='text-3xl'/>
-                <h1 className='font-bold text-2xl'>Drink Hub</h1>
+                <h1 className='font-bold text-xl lg:text-2xl'>Cocktail Cabinet</h1>
             </div>
             <div className='hidden md:flex text-xs lg:text-lg md:flex-row-reverse gap-4 '>
                 <ul className='inline-flex gap-4 place-content-center place-self-center'>
