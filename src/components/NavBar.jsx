@@ -28,7 +28,7 @@ export default function NavBar() {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/random">Random Drink</Link></li>
                 </ul>
-                <div className='inline-flex flex-row-reverse bg-white'>
+                <div className='inline-flex flex-row-reverse '>
                     <Link to={`/search/${search}`}><BiSearchAlt className='text-3xl rounded-r-lg text-violet-400 bg-white '/></Link>
                     <input type="text" placeholder='Find a drink...' className=' text-black rounded-l-lg appearance-none' onChange={(event) => {setSearch(event.target.value)}}  />
                 </div>
