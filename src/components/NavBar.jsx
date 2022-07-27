@@ -18,7 +18,7 @@ export default function NavBar() {
 
     return (
         <>
-        <div className={!nav ? 'grid grid-cols-2 w-screen items-center p-4 text-white bg-violet-400 font-outfit' : "hidden md:grid grid-cols-2 w-screen items-center p-4 text-white bg-violet-400 font-outfit"}>
+        <div className={!nav ? 'h-full grid grid-cols-2 w-screen items-center p-4 text-white bg-violet-400 font-outfit' : "hidden md:grid h-full grid-cols-2 w-screen items-center p-4 text-white bg-violet-400 font-outfit"}>
             <div className='flex'>
                 <BiDrink className='text-3xl'/>
                 <h1 className='font-bold text-2xl'>Drink Hub</h1>

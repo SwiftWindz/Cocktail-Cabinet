@@ -35,23 +35,23 @@ export default function DrinkCard() {
   }, []);
 
   return (
-    <div className="text-black w-screen h-full bg-white font-outfit">
-        <div className=' p-8'>
-            <h2 className='text-5xl text-center pt-8 font-bold '>{drink.strDrink}</h2>
-            <div className=" grid grid-cols-1 lg:grid-cols-2 p-8 border-t-2">
-            <div className="">
-                <img src={drink.strDrinkThumb} alt="Picture of a random drink" />
-            </div>
-            <div className="text-4xl place-content-center place-self-center">
-                <h3 className='border-b-2 pb-2'>Ingredients</h3>
-                <ul className='pt-2'>
-                {ingredients.map((ingredient, index) => {
-                    return <li key={index}>{Measurements[index] ===  'undefined' ? "" : Measurements[index] + " "} {ingredient}</li>
-                })}
-                </ul>
+    <div className="text-black w-screen h-full font-outfit">
+        <div className='py-8 md:py-52 lg:py-36'>
+            <div className=" flex gap-8 flex-col md:flex-row  justify-center items-center">
+              <img src={drink.strDrinkThumb} alt="Picture of a random drink" className='max-w-sm lg:max-w-lg  rounded-2xl' />
+              <div className="p-6 text-center">
+                <h5 className="text-gray-900 text-xl lg:text-3xl font-medium mb-2">{drink.strDrink}</h5>
+                <div className="text-gray-700 text-lg lg:text-2xl mb-4">
+                  <h3 className='border-b-2 pb-2'>Ingredients</h3>
+                  <ul className='pt-2 p-2'>
+                  {ingredients.map((ingredient, index) => {
+                      return <li className='pt-2' key={index}>{Measurements[index] ===  'undefined' ? "" : Measurements[index] + " "} {ingredient}</li>
+                  })}
+                  </ul>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
     </div>
   );
 }
