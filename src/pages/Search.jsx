@@ -30,7 +30,7 @@ export default function Search() {
                     <div className="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
                         <img className=" w-auto h-96 md:h-auto object-cover md:w-48  md:rounded-none md:rounded-l-lg" src={drink.strDrinkThumb} alt={drink.strDrinkThumb} />
                     <div className="p-6 flex flex-col justify-start">
-                        <Link to={`/drink/${drink.strDrink}`}><h5 className="text-gray-900 text-xl font-medium mb-2">{drink.strDrink}</h5></Link>
+                        <Link to={`/drink/${drink.strDrink}`}><h5 className="text-gray-900 text-xl font-medium mb-2 hover:text-violet-300">{drink.strDrink}</h5></Link>
                         <p className="text-gray-700 text-base mb-4">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis neque quae sequi vero quod rerum officiis nemo laboriosam odio explicabo magnam ratione consequuntur a at cumque minus, voluptatibus in eius.
                         </p>
