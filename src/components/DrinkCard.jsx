@@ -45,8 +45,8 @@ export default function DrinkCard() {
                   <h3 className='border-b-2 pb-2'>Ingredients</h3>
                   <ul className='pt-2 p-2'>
                   {ingredients.map((ingredient, index) => {
-                      return <li className='pt-2' key={index}>{Measurements[index] ===  'undefined' ? "" : Measurements[index] + " "} {ingredient}</li>
-                  })}
+                      return <li className='mt-2 px-2 bg-violet-400 hover:bg-violet-300 rounded-xl text-white' key={index}><a target="_blank" href={`https://www.amazon.com/s?k=${ingredient}`}>{Measurements[index] ===  'undefined' ? "" : Measurements[index] + " "} {ingredient}</a></li>
+                    })}
                   </ul>
                 </div>
               </div>
