@@ -43,7 +43,7 @@ export default function NavBar() {
             </div>
             <div>
                 <ul className=" pt-40 flex flex-col gap-8 justify-center place-content-center">
-                    <li className='text-center text-5xl'>Drink Hub</li>
+                    <li className='text-center text-5xl'>Cocktail Cabinet</li>
                     <div className='inline-flex flex-row-reverse justify-center'>
                         <Link to={`search/${search}`} onClick={handleClick}><BiSearchAlt className='text-3xl text-violet-400 bg-white rounded-r-lg'/></Link>
                         <input type="text" placeholder='Find a drink...' className=' text-black rounded-l-lg bg-white appearance-none' onChange={(event) => {setSearch(event.target.value)}}  />
