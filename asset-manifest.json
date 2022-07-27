@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Cocktail-Cabinet/static/css/main.c92e6067.css",
-    "main.js": "/Cocktail-Cabinet/static/js/main.11962542.js",
+    "main.js": "/Cocktail-Cabinet/static/js/main.76814b6c.js",
     "static/media/alcohol-bar-black-and-white-4295-832750849.jpg": "/Cocktail-Cabinet/static/media/alcohol-bar-black-and-white-4295-832750849.218802a4a30ff927d5d9.jpg",
     "index.html": "/Cocktail-Cabinet/index.html",
     "main.c92e6067.css.map": "/Cocktail-Cabinet/static/css/main.c92e6067.css.map",
-    "main.11962542.js.map": "/Cocktail-Cabinet/static/js/main.11962542.js.map"
+    "main.76814b6c.js.map": "/Cocktail-Cabinet/static/js/main.76814b6c.js.map"
   },
   "entrypoints": [
     "static/css/main.c92e6067.css",
-    "static/js/main.11962542.js"
+    "static/js/main.76814b6c.js"
   ]
 }
