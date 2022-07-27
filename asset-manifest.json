@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Drink-Hub/static/css/main.a4404806.css",
-    "main.js": "/Drink-Hub/static/js/main.9f6feba6.js",
+    "main.css": "/Drink-Hub/static/css/main.8760baa9.css",
+    "main.js": "/Drink-Hub/static/js/main.d6487e1a.js",
     "static/media/alcohol-bar-black-and-white-4295-832750849.jpg": "/Drink-Hub/static/media/alcohol-bar-black-and-white-4295-832750849.218802a4a30ff927d5d9.jpg",
     "index.html": "/Drink-Hub/index.html",
-    "main.a4404806.css.map": "/Drink-Hub/static/css/main.a4404806.css.map",
-    "main.9f6feba6.js.map": "/Drink-Hub/static/js/main.9f6feba6.js.map"
+    "main.8760baa9.css.map": "/Drink-Hub/static/css/main.8760baa9.css.map",
+    "main.d6487e1a.js.map": "/Drink-Hub/static/js/main.d6487e1a.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4404806.css",
-    "static/js/main.9f6feba6.js"
+    "static/css/main.8760baa9.css",
+    "static/js/main.d6487e1a.js"
   ]
 }
